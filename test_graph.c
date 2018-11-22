@@ -1,30 +1,21 @@
 #include "lists.h"
+#include "matrices.h"
 
 int main()
 {
-    List l;
-    init(&l);
+    Matrix_f mat;
+    initMatrix_f(&mat);
 
-    addElement(&l, 1);
-    addElement(&l, 4);
-    addElement(&l, 2);
-    addElement(&l, 6);
-    addElement(&l, 0);
-    addElement(&l, 10);
-    addElement(&l, 1);
-    addElement(&l, 4);
-    addElement(&l, 2);
-    addElement(&l, 6);
-    addElement(&l, 0);
-    addElement(&l, 10);
-    addElement(&l, 1);
-    addElement(&l, 4);
-    addElement(&l, 2);
-    addElement(&l, 6);
+    mat.x_n = 3;
+    mat.y_n = 3;
 
-    printf("Graph:\n\n");
+    mat.data[0][0] = 1; mat.data[1][0] = 1; mat.data[2][0] = 2;
+    mat.data[0][1] = 2; mat.data[1][1] = 1; mat.data[2][1] = 1;
+    mat.data[0][2] = 4; mat.data[1][2] = 3; mat.data[2][2] = 5;
 
-    graph(&l, 10);
+    drawMatrix_f(&mat);
+
+    gaussElimination_f(&mat);
 
     return 0;
 }

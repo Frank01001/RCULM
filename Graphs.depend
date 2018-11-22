@@ -1,6 +1,22 @@
 # depslib dependency file v1.0
-1542711080 source:d:\finfo\graphs\test_graph.c
+1542922086 source:d:\finfo\graphs\test_graph.c
 	"lists.h"
+	"matrices.h"
 
 1542738503 d:\finfo\graphs\lists.h
+
+1542738467 source:d:\finfo\graphs\lists.c
+	"lists.h"
+	<stdio.h>
+	<math.h>
+
+1542833891 d:\finfo\graphs\matrices.h
+	"utils.h"
+
+1542922114 source:d:\finfo\graphs\matrices.c
+	"matrices.h"
+	<stdio.h>
+	<math.h>
+
+1542832857 d:\finfo\graphs\utils.h
 

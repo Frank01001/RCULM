@@ -31,7 +31,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="lists.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lists.h" />
+		<Unit filename="matrices.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="matrices.h" />
 		<Unit filename="test_graph.c">
 			<Option compilerVar="CC" />
 		</Unit>
