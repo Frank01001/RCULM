@@ -3,7 +3,7 @@
 
 #define MAX_ELEMENTS 16
 #define MAX_HEIGHT 10
-#define MAX_VAL 999
+#define MAX_VAL_L 999
 
 
 /* List type */
