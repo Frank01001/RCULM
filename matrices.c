@@ -164,6 +164,9 @@ void gaussElimination_f(Matrix_f *mat, bool intermediateSteps)
 //Determinant calculation ! MUST BE SQUARE MATRIX
 double determinant_f(Matrix_f *mat)
 {
+    if(mat->x_n == 1)
+        return mat->data[0][0];
+    
     /** Uses Laplace's First Theorem on first row */
 
     //being a square matrix, x_n = y_n
@@ -187,6 +190,9 @@ double determinant_f(Matrix_f *mat)
 
 int determinant(Matrix *mat)
 {
+    if(mat->x_n == 1)
+        return mat->data[0][0];
+    
     /** Uses Laplace's First Theorem on first row */
 
     //being a square matrix, x_n = y_n
