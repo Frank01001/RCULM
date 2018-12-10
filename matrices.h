@@ -3,8 +3,8 @@
 
 #include "utils.h"
 
-#define MAX_ROW 32
-#define MAX_COL 32
+#define MAX_ROW 9
+#define MAX_COL 9
 #define MAX_VAL_M 99
 
 typedef struct
